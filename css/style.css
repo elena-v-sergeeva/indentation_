@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
+}
+
+.article  {
+  padding: 35px 30px 25px;
+}
+
+.container-wide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+
+.article__title {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0 0 30px 0;
+}
+
+.article__item {
+  margin: 0 0 30px;
+}
+
+.article__item:last-child {
+  margin-bottom: 0;
+}
+
+.section__title {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0 0 30px 0;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0 0 0 30px;
+  color: #02535f;
+}
+
+.nav__item {
+  margin: 0 0 10px 0;
+}
+
+.nav__item:last-child {
+  margin: 0;
+}
+
+.nav__link {
+  color: #02535F;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+  margin: 0 0 10px 0;
+}
+
+.blok {
+  background-color: #F1F1F1;
+  border-radius: 10px;
+  padding: 25px 45px;
+}
+
+.blok__title {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.blok__list {
+  margin: 0 0 30px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blok__item {
+  margin: 0 0 10px 0;
+}
+
+.blok__text {
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding: 25px 0;
+}
+
+.section__text {
+  margin:  0 0 30px 0;
+  padding: 0;
+}
+
+.section__text:last-child {
+  margin: 0;
+}
+
+.section__text-italic {
+  font-style: italic;
+}
+
+.section__text-bold {
+  font-weight: 700;
+}
+
+.section__img-left {
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.section__img-center {
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.section__img-center:last-child {
+  margin-bottom: 0;
+}
+
+.row {
+  margin: 0 0 30px 0;
+}
+
+.row:last-child {
+  margin: 0;
+}
+
+.row__img {
+  margin-right: 30px;
+}
+
+.row__img:last-child {
+  margin-right: 0;
+}
+
+.row__block-rigth {
+  vertical-align: top;
+  max-width: 485px;
+  display: inline-block;
+}
+
+.row__block-left {
+  vertical-align: top;
+  max-width: 480px;
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.figure {
+  padding: 0;
+  margin: 0 0 30px 0;
+
+  min-height: 506px;
+}
+
+.figure__img {
+  border-top: 1px solid #000;
+}
+
+.figure__figcaption {
+  color: rgba(94, 94, 94, 1);
+  padding: 15px 30px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+
