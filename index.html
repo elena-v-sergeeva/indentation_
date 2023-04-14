@@ -13,36 +13,32 @@
   <title>Отступы в вёрстке: margin и padding</title>
 </head>
 <body>
-  <article class="article">
-    <header>
-      <section class="section">
-        <div class="container">
-          <h1 class="article__title">Отступы в вёрстке: margin и padding</h1>
-          <p class="article__item">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
-          <p class="article__item">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
-        </div>
-      </section>
-      
-      <section class="section">
-        <div class="container-wide">
-          <div class="blok">
-            <h2 class="blok__title">Содержание:</h2>
-
-            <nav class="nav">
-              <ol class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#1">Отступ задается от предыдущего элемента к следующему</a></li>
-                <li class="nav__item"><a class="nav__link" href="#2">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
-                <li class="nav__item"><a class="nav__link" href="#3">Для последнего элемента группы отступ обнуляется</a></li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </section>
+  <div class="article">
+    <header  class="section">
+      <div class="container">
+        <h1 class="article__title">Отступы в вёрстке: margin и padding</h1>
+        <p class="article__item">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
+        <p class="article__item">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
+      </div>
     </header>
+      
+    <section class="section">
+      <div class="container-wide">
+          <h2 class="container-wide__title">Содержание:</h2>
+
+          <nav class="nav">
+            <ol class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#indent-next">Отступ задается от предыдущего элемента к следующему</a></li>
+              <li class="nav__item"><a class="nav__link" href="#indent-last">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
+              <li class="nav__item"><a class="nav__link" href="#element-last">Для последнего элемента группы отступ обнуляется</a></li>
+            </ol>
+          </nav>
+      </div>
+    </section>
   
     <section class="section">
       <div class="container"> 
-        <h3 class="section__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h3>
+        <h2 class="section__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
 
         <div class="row">
           <img class="row__img" src="img/image_one.png" alt="Иллюстрация примера" height="415">
@@ -67,9 +63,9 @@
       </div>
     </section>
   
-    <section class="section">
+    <section class="section" id="indent-next">
       <div class="container"> 
-        <h3 class="section__title">Отступ задается последнему возможному элементу в DOM-дереве</h3>
+        <h2 class="section__title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
 
         <p class="section__text">Вообще, <span class="section__text-italic">margin</span> задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
         <img class="section__img-left" src="img/image_three.png" alt="Иллюстрация примера" height="537">
@@ -92,9 +88,9 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="indent-last">
       <div class="container"> 
-        <h3 class="section__title">Для последнего элемента группы отступ всегда обнуляется</h3>
+        <h2 class="section__title">Для последнего элемента группы отступ всегда обнуляется</h2>
 
         <p class="section__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
         
@@ -117,23 +113,21 @@
       </div>
     </section>
  
-    <section class="section">
+    <section class="section" id="element-last">
       <div class="container-wide">
-        <div class="blok">
-          <h2 class="blok__title">Подытожим:</h2>
+        <h2 class="container-wide__title">Подытожим:</h2>
 
-          <ul class="blok__list">
-            <li class="blok__item">&mdash; отступы задаём от предыдущего элемента к следующему</li>
-            <li class="blok__item">&mdash; используем только margin-right и margin-bottom</li>
-            <li class="blok__item">&mdash; внешние отступы задаются только между соседями</li>
-            <li class="blok__item">&mdash; внутренний отступ задаём самому верхнему элементу в дом дереве</li>
-            <li class="blok__item">&mdash; последнему элементу группы отступ всегда обнуляем</li>
-          </ul>
+        <ul class="container-wide__list">
+          <li class="container-wide__item">&mdash; отступы задаём от предыдущего элемента к следующему</li>
+          <li class="container-wide__item">&mdash; используем только margin-right и margin-bottom</li>
+          <li class="container-wide__item">&mdash; внешние отступы задаются только между соседями</li>
+          <li class="container-wide__item">&mdash; внутренний отступ задаём самому верхнему элементу в дом дереве</li>
+          <li class="container-wide__item">&mdash; последнему элементу группы отступ всегда обнуляем</li>
+        </ul>
 
-          <p class="blok__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
-        </div>
+        <p class="container-wide__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
       </div>
     </section>
-  </article>
+  </div>
 </body>
 </html>

@@ -10,7 +10,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #8e7979;
   color: #000;
 }
 
@@ -19,14 +19,17 @@ body {
 }
 
 .container-wide {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 30px;
+  background-color: #F1F1F1;
+  border-radius: 10px;
+  padding: 25px 45px;
 }
 
 .container {
   max-width: 1080px;
   margin: 0 auto;
+  
 }
 
 
@@ -71,29 +74,23 @@ body {
   margin: 0 0 10px 0;
 }
 
-.blok {
-  background-color: #F1F1F1;
-  border-radius: 10px;
-  padding: 25px 45px;
-}
-
-.blok__title {
+.container-wide__title {
   font-size: 44px;
   font-weight: 700;
   margin: 0 0 20px 0;
 }
 
-.blok__list {
+.container-wide__list {
   margin: 0 0 30px 0;
   padding: 0;
   list-style: none;
 }
 
-.blok__item {
+.container-wide__item {
   margin: 0 0 10px 0;
 }
 
-.blok__text {
+.container-wide__text {
   padding: 0;
   margin: 0;
 }
